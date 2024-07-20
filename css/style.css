@@ -1,0 +1,270 @@
+@media(max-width:567px){
+    .my-img{
+        height: 500px !important;
+    }
+}
+
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+.social{
+    position: fixed;
+    top: 6rem;
+    right: 2rem;
+    width: 4rem;
+    z-index: 100;
+    height: 30rem;
+}
+.social ul li{
+    list-style: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.social ul li i{
+    background-color: white;
+    padding: 1px;
+    border-radius: 10px;
+    opacity: 0.8;
+   
+}
+
+.fixed{
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/24.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 100px 0;
+}
+.fixed-1{
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 100px 0;
+}
+.my-card{
+    position: relative;
+    
+}
+.my-card::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    height: 0;
+    width: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.my-card:hover::before{
+    height: 100%;
+    width: 100%;
+}
+.my-card::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.my-card:hover::after{
+    height: 100%;
+    width: 100%;
+}
+.card-shadow{
+ box-shadow: 3px 3px 10px 5px black;
+ 
+}
+
+.card-text small{
+    position: relative;
+}
+.card-text small::after{
+    position: absolute;
+    content: '';
+    bottom: -8px;
+    left: 0;
+    width: 30%;
+    height: 5px;
+    background-color:rgb(57, 56, 56);
+    border-radius: 3px;
+    transition: .5s;
+
+}
+.card .row:hover small::after{
+    width:  100%;
+
+}
+.card .row:hover .img-zoom {
+    z-index: 1;
+
+    transform: translateX(5px);
+
+}  
+.card .row:hover .img-zoom2 {
+    z-index: 1;
+
+    transform: translateX(-5px);
+
+} 
+.card-news{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+    position: relative;
+    height: 200px;
+    box-shadow: 0px 0px 24px gray;
+    overflow: hidden;
+}
+.card-news .left{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    background-color:white;
+    z-index:2;
+    right: 26%;
+    padding: 5px;
+    transform: skewX(-11deg);
+
+}
+.card-news .left span{
+    position: relative;
+}
+.card-news .left span::after{
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 3px;
+    border-radius: 4px;
+    bottom: -8px;
+    left: 0;
+    background-color: rgb(41, 41, 91);
+    transition: 0.3s;
+}
+.card-news:hover .left span::after{
+    width: 100%;
+}
+.card-news:hover .right{
+    transform: scale(1.2);
+}
+.card-news .right{
+    width: 30%;
+    height: 100%;
+    background-image: url('../images/13.webp');
+    background-size: cover;
+    position: absolute;
+    right: 0%;
+    /* top:0%; */
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.card-news:hover .left2{
+    transform: scale(1.2);
+}
+.card-news .left2{
+    width: 30%;
+    height: 100%;
+    background-image: url('../images/13.webp');
+    background-size: cover;
+    position: absolute;
+    left: 0%;
+    /* top:0%; */
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.card-news .right2{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    background-color:white;
+    z-index:2;
+    left: 26%;
+    padding: 5px;
+    padding-left: 10px;
+    
+    transform: skewX(11deg);
+
+}
+.card-news .right2 span{
+    position: relative;
+}
+.card-news .right2 span::after{
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 3px;
+    border-radius: 4px;
+    bottom: -8px;
+    left: 0;
+    background-color: rgb(41, 41, 91);
+    transition: 0.3s;
+}
+.card-news:hover .right2 span::after{
+    width: 100%;
+}
+
+
+
+
+
+.card .row:hover .card-content{
+    z-index: 2;
+}
+
+.img-over{
+    position: relative;
+}
+.img-over::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.564);
+}
+
+.para-card{
+    position: absolute;
+    left: 18px;
+    bottom: 1px;
+    z-index: 2;
+}
+
+.small-img{
+    position: absolute;
+    z-index: 2;
+    left: 15px;
+    bottom: 40px;
+    width: 100px;
+    height: 140px;
+    border-radius: 50%;
+
+}
+
+.join-us{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.join-us .box{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(10, 43, 69);
+    color: aliceblue;
+    box-shadow: 0px 0px 30px 3px rgb(52, 88, 172);
+    width: 250px;
+    height: 200px;
+    
+    
+}
